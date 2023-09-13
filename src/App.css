@@ -66,13 +66,15 @@ body {
   .exercise-card {
     width: 400px;
     height: 445px;
-    background: #fff;
-    border-top: 4px solid #FF2625;
-    border-bottom-left-radius: 20px;
+    background: #100700;
+    border: 10px solid #4c4558;
+    border-radius: 20px;
+    box-shadow: -1rem 0 3rem #000;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding-top: 20px;
     padding-bottom: 10px;
     transform: scale(1, 1);
     transition: 0.3s all ease-in-out;
@@ -80,6 +82,7 @@ body {
   
   .exercise-card img {
     height: 326px;
+    filter: invert(100%);
   }
   
   .bodyPart-card {
