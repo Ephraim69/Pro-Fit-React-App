@@ -38,6 +38,7 @@ body {
     width: 400px;
     min-width: 250px;
     padding: 1.5rem;
+    cursor: pointer;
 }
 
 
