@@ -23,7 +23,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   const handleSearch = async () => {
     if (search) {
-      window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
       const exercisesData = await fetchData(
         "https://exercisedb.p.rapidapi.com/exercises",
         exerciseOptions
@@ -39,6 +38,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       });
 
       setExercises(searchedExercises);
+      window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
     }
   };
 

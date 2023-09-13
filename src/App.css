@@ -1,3 +1,15 @@
+
+.exercise-name {
+    font-family:  'DM Mono', monospace;
+}
+
+.button1 {
+    background-color: rgb(5, 33, 98);
+}
+
+.button2 {
+    background-color: rgb(170, 119, 10);
+}
 body {
     font-family: 'Josefin Sans';
     background-color: #FFFAFB;
@@ -65,8 +77,8 @@ body {
   
   .exercise-card {
     width: 400px;
-    height: 445px;
-    background: #100700;
+    height: 400x;
+    background: #000000;
     border: 10px solid #4c4558;
     border-radius: 20px;
     box-shadow: -1rem 0 3rem #000;

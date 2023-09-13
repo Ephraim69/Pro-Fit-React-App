@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+.exercise-name {
+    font-family:  'DM Mono', monospace;
+}
+
+.button1 {
+    background-color: rgb(5, 33, 98);
+}
+
+.button2 {
+    background-color: rgb(170, 119, 10);
+}
