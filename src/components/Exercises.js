@@ -6,7 +6,13 @@ import { Box, Stack, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 
-const Exercises = ({ exercises, setExercises, bodyPart }) => {
+const Exercises = ({
+  exercises,
+  setExercises,
+  bodyPart,
+  search,
+  setSearch,
+}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
 
@@ -32,8 +38,14 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           "https://exercisedb.p.rapidapi.com/exercises",
           exerciseOptions
         );
-        setExercises(exercisesData);
+      } else {
+        exercisesData = await fetchData(
+          `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,
+          exerciseOptions
+        );
       }
+      setExercises(exercisesData);
+      setSearch("");
     };
 
     fetchExercisesData();
@@ -41,8 +53,22 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   return (
     <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
-      <Typography variant="h4" mb="46px">
-        Showing Results
+      <Typography
+        variant="h4"
+        mb="46px"
+        textTransform="capitalize"
+        sx={{
+          borderRadius: "10px",
+          background: "#17141d",
+          boxShadow: "-10px 0 30px rgba(0, 0, 0, 0.5)",
+          mb: { lg: "70px" },
+        }}
+        p="20px"
+        pl="50px"
+        fontFamily={"DM Mono"}
+      >
+        {search && `"${search}" results`}
+        {!search && `${bodyPart} exercises`}
       </Typography>
       <Stack
         direction="row"

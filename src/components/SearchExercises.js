@@ -4,8 +4,13 @@ import Carousel from "./Carousel";
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 
-const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
-  const [search, setSearch] = useState("");
+const SearchExercises = ({
+  setExercises,
+  bodyPart,
+  setBodyPart,
+  search,
+  setSearch,
+}) => {
   const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
@@ -62,6 +67,9 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           value={search}
           onChange={(e) => {
             setSearch(e.target.value.toLowerCase());
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") handleSearch();
           }}
           placeholder="Search Exercises"
           type="text"
