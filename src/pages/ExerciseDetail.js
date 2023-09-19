@@ -47,7 +47,6 @@ const ExerciseDetail = () => {
     };
     fetchExercisesData();
   }, [id]);
-
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />

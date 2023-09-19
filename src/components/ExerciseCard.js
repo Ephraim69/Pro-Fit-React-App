@@ -1,9 +1,16 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 import "./ExerciseCard.css";
 
 const ExerciseCard = ({ index, exercise }) => {
+  const { id } = useParams();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 100, behavior: "smooth" });
+  }, [id]);
   return (
     <Link
       className="exercise-card"

@@ -16,6 +16,9 @@ const Exercises = ({
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
 
+  console.log("Log Exercises");
+  console.log(exercises);
+
   const lastExerciseIndex = currentPage * exercisesPerPage;
   const firstExerciseIndex = lastExerciseIndex - exercisesPerPage;
   const currentExercises = exercises.slice(

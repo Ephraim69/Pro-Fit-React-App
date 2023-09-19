@@ -32,7 +32,9 @@ const Detail = ({ exerciseDetail }) => {
         <img src={gifUrl} alt={name} loading="lazy" />
       </div>
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
-        <Typography variant="h3">{name}</Typography>
+        <Typography variant="h3" textTransform="capitalize">
+          {name}
+        </Typography>
         <Typography variant="h6">
           Ah, the {name}, a classic in the realm of fitness and a gem for
           targeting your {target}. Whether you're a fitness aficionado or just

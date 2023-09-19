@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import { Typography, Box, Button, Stack } from "@mui/material";
 import RightArrowIcon from "../assets/icons/right-arrow.png";
 import LeftArrowIcon from "../assets/icons/left-arrow.png";
-import capitalize from "../utils/capitalize";
 
 const Carousel = ({ data, bodyPart, setBodyPart }) => {
   const [clicked, setClicked] = useState(false);
@@ -34,7 +33,9 @@ const Carousel = ({ data, bodyPart, setBodyPart }) => {
           >
             <header className="card-header">
               <p>Exercises</p>
-              <h2>{capitalize(item)}</h2>
+              <Typography variant="h2" textTransform="capitalize">
+                {item}
+              </Typography>
             </header>
             <img
               src={Banner}
