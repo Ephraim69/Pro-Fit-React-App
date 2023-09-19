@@ -37,32 +37,50 @@ const ExerciseVideos = ({ youtubeData, name }) => {
           sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0" } }}
         >
           {displayData.map((item, index) => (
-            <a
-              key={index}
-              className="exercise-video"
-              href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={item.video.thumbnails[0].url}
-                alt={`{item.video.title} video`}
-              />
-            </a>
+            <Box key={index}>
+              <a
+                className="exercise-video"
+                href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={item.video.thumbnails[0].url}
+                  alt={`{item.video.title} video`}
+                />
+                <Box sx={{ pl: "10px", pr: "10px" }}>
+                  <Typography variant="h6" color="#e3e3e3">
+                    {item.video.title}
+                  </Typography>
+                  <Typography variant="h7" color="#b3b3b3">
+                    {item.video.channelName}
+                  </Typography>
+                </Box>
+              </a>
+            </Box>
           ))}
         </Stack>
-      </Box>
-      <Box>
+
         <Button
           variant="outlined"
-          sx={{ border: "2px solid grey", position: "absolute", right: 140 }}
+          sx={{
+            mt: { lg: "-50px" },
+            border: "2px solid grey",
+            position: "absolute",
+            right: { lg: 375 },
+          }}
           onClick={() => onArrowClick(false)}
         >
           <img src={LeftArrowIcon} alt="Left Arrow" />
         </Button>
         <Button
           variant="outlined"
-          sx={{ border: "2px solid grey", position: "absolute", right: 65 }}
+          sx={{
+            mt: { lg: "-50px" },
+            border: "2px solid grey",
+            position: "absolute",
+            right: { lg: 305, xs: -20 },
+          }}
           onClick={() => onArrowClick(true)}
         >
           <img src={RightArrowIcon} alt="Right Arrow" />
