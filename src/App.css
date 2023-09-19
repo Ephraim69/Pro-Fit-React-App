@@ -78,6 +78,19 @@ body {
     transition: .2s;
 }
 
+.transitioning {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+
+
+
+
+
+
+
 .detail-icons Button {
   background-color: rgb(37, 3, 68);
   border-radius: 16px;
