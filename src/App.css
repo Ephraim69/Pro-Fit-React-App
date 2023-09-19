@@ -65,6 +65,34 @@ body {
     height: 742px;
   }
   
+  .detail-icons {
+    /* ... */
+    border: 2px solid rgb(27, 0, 78);
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: 5px 5px 5px #362b4c;
+    font-size: 20px;
+    padding-left: 1px;
+    height: 90px;
+
+    transition: .2s;
+}
+
+.detail-icons Button {
+  background-color: rgb(37, 3, 68);
+  border-radius: 16px;
+  height: 90px;
+  width: 80px;
+}
+.detail-icons:hover {
+  transform: translate(-0.5rem, -0.5rem)
+}
+
+.detail-icons:hover~.card {
+    transform: translateX(130px);
+}
+
+
   .hero-banner-img {
     position: absolute;
     right: 40px;
@@ -75,6 +103,28 @@ body {
   
   }
   
+  .detail-card {
+     width: 120%;
+      height: 742px;
+      background: #000000;
+      border: 5px solid #2a184a;
+      border-radius: 20px;
+      box-shadow: -1rem 0 3rem #0a071e;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      transform: scale(1, 1);
+      transition: 0.3s all ease-in-out;
+     
+  }
+
+  .detail-card img {
+    filter: invert(100%);
+  }
+
   .exercise-card {
     width: 400px;
     height: 400x;
