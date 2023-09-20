@@ -14,7 +14,7 @@ const HeroBanner = () => {
       p="20px"
     >
       <Typography color="#FF2625" fontWeight="600" fontSize="26px">
-        Fitness Club
+        Pro-Fit Fitness
       </Typography>
       <Typography
         fontWeight="700"
@@ -22,10 +22,11 @@ const HeroBanner = () => {
         mb="23px"
         mt="30px"
       >
-        Sweat, Smile <br /> and repeat
+        Your Goals. Our Expertise.
+        <br /> Let's Get Fit.
       </Typography>
       <Typography fontSize="22px" LineHeight="35px" mb={4}>
-        Check out the most effective exercises
+        Dive into routines that bring results.
       </Typography>
       <Button
         variant="contained"
@@ -33,7 +34,7 @@ const HeroBanner = () => {
         href="#exercises"
         sx={{ backgroundColor: "#ff2625", padding: "10px" }}
       >
-        Explore Exercises
+        Kickstart Your Training
       </Button>
       <Typography
         fontWeight={600}

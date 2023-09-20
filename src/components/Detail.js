@@ -25,6 +25,7 @@ const Detail = ({ exerciseDetail }) => {
 
   return (
     <Stack
+      marginTop="50px"
       gap="60px"
       sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
     >

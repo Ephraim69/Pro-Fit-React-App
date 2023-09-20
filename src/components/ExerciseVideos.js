@@ -60,7 +60,6 @@ const ExerciseVideos = ({ youtubeData, name }) => {
             </Box>
           ))}
         </Stack>
-
         <Button
           variant="outlined"
           sx={{

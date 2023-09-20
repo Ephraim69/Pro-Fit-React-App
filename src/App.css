@@ -67,10 +67,10 @@ body {
   
   .detail-icons {
     /* ... */
-    border: 2px solid rgb(27, 0, 78);
+    border: 2px solid rgba(17, 0, 47, 0.5);
     border-radius: 16px;
     background: #17141d;
-    box-shadow: 5px 5px 5px #362b4c;
+    box-shadow: 5px 5px 5px rgba(39, 31, 55, 0.5);
     font-size: 20px;
     padding-left: 1px;
     height: 90px;
@@ -113,16 +113,30 @@ body {
     width: 700px;
     height: 900px;
     margin-top: -330px;
-  
+    border-bottom-left-radius: 100px;
+    box-shadow: -5px 30px 20px 0px rgba(0,0,0, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hero-banner-img:hover {
+    transform:  scale(1.03);
+  }
+
+  .navbar-link {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-link:hover {
+    transform:  scale(1.05);
   }
   
   .detail-card {
      width: 120%;
       height: 742px;
       background: #000000;
-      border: 5px solid #2a184a;
+      border: 5px solid #1a0f2d;
       border-radius: 20px;
-      box-shadow: -1rem 0 3rem #0a071e;
+      box-shadow: -1rem 0 3rem #070514;
       text-decoration: none;
       display: flex;
       justify-content: space-between;
