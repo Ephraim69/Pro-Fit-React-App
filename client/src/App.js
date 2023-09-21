@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Register from "./pages/Register";
 
 const App = () => {
-  let loggedIn = false;
+  let loggedIn = true;
 
   return (
     <Box width={{ xl: "1488px" }} m="auto">
