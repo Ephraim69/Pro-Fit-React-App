@@ -3,6 +3,7 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import Carousel from "./Carousel";
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
+import { ContactSupportOutlined } from "@mui/icons-material";
 
 const SearchExercises = ({
   setExercises,
@@ -29,10 +30,11 @@ const SearchExercises = ({
   const handleSearch = async () => {
     if (search) {
       const exercisesData = await fetchData(
-        "https://exercisedb.p.rapidapi.com/exercises",
+        "https://exercisedb.p.rapidapi.com/exercises?limit=-1",
         exerciseOptions
       );
-
+      console.log("Exercise Data");
+      console.log(exercisesData);
       const searchedExercises = exercisesData.filter((exercise) => {
         return (
           exercise.name.toLowerCase().includes(search) ||
@@ -43,6 +45,10 @@ const SearchExercises = ({
       });
 
       setExercises(searchedExercises);
+      console.log("Search State");
+      console.log(search);
+      console.log("Searched Exercises");
+      console.log(searchedExercises);
       window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
     }
   };

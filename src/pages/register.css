@@ -35,18 +35,18 @@ a, a:visited {
     color: #fff;
 }
 
-input[type="text"],
-input[type="password"],
-button,
-textarea {
+.register input[type="text"],
+.register input[type="password"],
+.register button,
+.register textarea {
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   padding: 0.25rem;
   border-radius: 0.5rem;
 }
 
-label,
-button {
+.register label,
+.register button {
   margin-top: 1rem;
 }
 

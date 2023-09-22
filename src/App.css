@@ -122,6 +122,12 @@ body {
     transform:  scale(1.03);
   }
 
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+
   .navbar-link {
     transition: transform 0.3s ease-in-out;
   }
