@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Pro-Fit-React-App/static/css/main.96499456.css",
+    "main.js": "/Pro-Fit-React-App/static/js/main.0a78e593.js",
+    "static/media/Logo.png": "/Pro-Fit-React-App/static/media/Logo.a3b9197e1c2d14e16aa0.png",
+    "static/media/banner.png": "/Pro-Fit-React-App/static/media/banner.4bcae34aa23f32199426.png",
+    "static/media/workout.png": "/Pro-Fit-React-App/static/media/workout.2d57f670271ac16476b9.png",
+    "static/media/gym.png": "/Pro-Fit-React-App/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/Pro-Fit-React-App/index.html",
+    "main.96499456.css.map": "/Pro-Fit-React-App/static/css/main.96499456.css.map",
+    "main.0a78e593.js.map": "/Pro-Fit-React-App/static/js/main.0a78e593.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96499456.css",
+    "static/js/main.0a78e593.js"
+  ]
+}
