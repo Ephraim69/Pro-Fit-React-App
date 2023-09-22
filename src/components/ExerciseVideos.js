@@ -25,7 +25,7 @@ const ExerciseVideos = ({ youtubeData, name }) => {
 
   return (
     <>
-      <Box sx={{ marginTop: { lg: "200px", xs: "20px" } }} p="20px">
+      <Box sx={{ marginTop: { lg: "100px", xs: "20px" } }} p="20px">
         <Typography variant="h3" mb="33px" textTransform="capitalize">
           Watch <span style={{ color: "#ff2625" }}>{name}</span> exercise videos
         </Typography>
