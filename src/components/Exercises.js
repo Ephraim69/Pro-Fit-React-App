@@ -38,12 +38,12 @@ const Exercises = ({
 
       if (bodyPart === "all") {
         exercisesData = await fetchData(
-          "https://exercisedb.p.rapidapi.com/exercises",
+          "https://exercisedb.p.rapidapi.com/exercises?limit=-1",
           exerciseOptions
         );
       } else {
         exercisesData = await fetchData(
-          `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,
+          `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}?limit=-1`,
           exerciseOptions
         );
       }
