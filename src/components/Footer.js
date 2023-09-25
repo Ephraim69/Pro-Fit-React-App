@@ -1,38 +1,17 @@
 import React from "react";
-
-// Styles
-const footerStyles = {
-  background: "#000",
-  color: "#fff",
-  padding: "20px 0",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  flexDirection: "column",
-  fontSize: "14px",
-  marginTop: "100px",
-};
-
-const linkStyles = {
-  textDecoration: "none",
-  color: "#fff",
-  margin: "0 15px",
-  hover: {
-    textDecoration: "underline",
-  },
-};
+import "./Footer.css";
 
 // Component
 const Footer = () => (
-  <footer style={footerStyles}>
+  <footer className="footer">
     <div style={{ marginBottom: "10px" }}>
-      <a href="https://github.com/Ephraim69" style={linkStyles}>
+      <a href="https://github.com/Ephraim69" className="footer-link">
         About me
       </a>
-      <a href="/privacy" style={linkStyles}>
+      <a href="/privacy" className="footer-link">
         Privacy Policy
       </a>
-      <a href="/terms" style={linkStyles}>
+      <a href="/terms" className="footer-link">
         Terms & Conditions
       </a>
     </div>

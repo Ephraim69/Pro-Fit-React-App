@@ -13,22 +13,24 @@ const App = () => {
   let loggedIn = true;
 
   return (
-    <Box width={{ xl: "1488px" }} m="auto">
-      {!loggedIn ? (
-        <Routes>
-          <Route path="/" element={<Register />} />
-        </Routes>
-      ) : (
-        <>
-          <Navbar />
+    <>
+      <Box width={{ xl: "1488px" }} m="auto">
+        {!loggedIn ? (
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/exercise/:id" element={<ExerciseDetail />} />
+            <Route path="/" element={<Register />} />
           </Routes>
-        </>
-      )}
+        ) : (
+          <>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/exercise/:id" element={<ExerciseDetail />} />
+            </Routes>
+          </>
+        )}
+      </Box>
       <Footer />
-    </Box>
+    </>
   );
 };
 

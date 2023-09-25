@@ -24,7 +24,10 @@ const Carousel = ({ data, bodyPart, setBodyPart }) => {
           <article
             onClick={() => {
               setBodyPart(item);
-              window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
+              window.scrollTo({
+                top: window.innerHeight * 2,
+                behavior: "smooth",
+              });
             }}
             className="card"
             key={item.id || item}
@@ -69,7 +72,7 @@ const Carousel = ({ data, bodyPart, setBodyPart }) => {
           </article>
         ))}
       </section>
-      <Box>
+      <Box sx={{ display: { lg: "block", xs: "none" } }}>
         <Button
           variant="outlined"
           sx={{ border: "2px solid grey", position: "absolute", right: 140 }}

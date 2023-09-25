@@ -49,7 +49,7 @@ const SearchExercises = ({
       console.log(search);
       console.log("Searched Exercises");
       console.log(searchedExercises);
-      window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
+      window.scrollTo({ top: window.innerHeight * 2, behavior: "smooth" });
     }
   };
 
@@ -63,7 +63,7 @@ const SearchExercises = ({
       <Typography
         sx={{
           fontSize: { lg: "44px", xs: "20px" },
-          fontWeight: { lg: 700, xs: 500 },
+          fontWeight: { lg: 700, xs: 700 },
         }}
         mb="50px"
         textAlign="center"
@@ -88,7 +88,7 @@ const SearchExercises = ({
             input: { fontWeight: "700", border: "none", borderRadius: "4px" },
             width: { lg: "1170px", xs: "350px" },
             backgroundColor: "#fff",
-            borderRadius: "40px",
+            borderRadius: { lg: "40px", xs: "20px" },
           }}
         />
         <Button
@@ -102,13 +102,21 @@ const SearchExercises = ({
             height: "56px",
             position: "absolute",
             right: 0,
+            borderTopRightRadius: { lg: "5px", xs: "20px" },
+            borderBottomRightRadius: { lg: "5px", xs: "20px" },
           }}
           onClick={handleSearch}
         >
           Search
         </Button>
       </Box>
-      <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
+      <Box
+        sx={{
+          position: "relative",
+          width: { lg: "100%", xs: "100vw" },
+          p: "20px",
+        }}
+      >
         <Carousel
           data={bodyParts}
           bodyPart={bodyPart}

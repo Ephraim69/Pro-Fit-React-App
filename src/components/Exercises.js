@@ -55,7 +55,12 @@ const Exercises = ({
   }, [bodyPart]);
 
   return (
-    <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
+    <Box
+      id="exercises"
+      sx={{ mt: { lg: "110px", xs: "30px" } }}
+      mt="50px"
+      p="20px"
+    >
       <Typography
         variant="h4"
         mb="46px"
@@ -64,9 +69,11 @@ const Exercises = ({
           borderRadius: "10px",
           background: "#17141d",
           boxShadow: "-10px 0 30px rgba(0, 0, 0, 0.5)",
-          mb: { lg: "70px" },
+          mb: { lg: "70px", xs: "60px" },
+          fontSize: { lg: "34px", xs: "20px" },
+          p: { lg: "20px", xs: "10px" },
+          textAlign: { xs: "center", lg: "left" },
         }}
-        p="20px"
         pl="50px"
         fontFamily={"DM Mono"}
       >
