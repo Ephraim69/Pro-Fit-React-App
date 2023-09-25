@@ -54,11 +54,16 @@ const SearchExercises = ({
   };
 
   return (
-    <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
+    <Stack
+      alignItems="center"
+      sx={{ mt: { lg: "37px", xs: "0px" } }}
+      justifyContent="center"
+      p="20px"
+    >
       <Typography
-        fontWeight={700}
         sx={{
-          fontSize: { lg: "44px", xs: "30px" },
+          fontSize: { lg: "44px", xs: "20px" },
+          fontWeight: { lg: 700, xs: 500 },
         }}
         mb="50px"
         textAlign="center"

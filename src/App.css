@@ -238,9 +238,66 @@ body {
     }
   
   }
+
+ 
   
   @media screen and (max-width:400px) {
     .exercise-card {
       width: 280px;
     }
   }
+
+
+  /* NavBar Styles */
+  .logoContainer {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for logoText */
+.logoText {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Styles for the logo image */
+.logo-img {
+  width: 70px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+/* Styles for navbar links */
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.navbar-link.home-link {
+  border-bottom: 3px solid #fff;
+}
+
+@media screen and (max-width:400px) {
+  .logo-img {
+    width: 45px;
+    height: 30px;
+    margin: 0 20px;
+  }
+
+  .logoText { 
+    font-size: 8px;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+  }
+}
+  /* NavBar Styles END */
+
