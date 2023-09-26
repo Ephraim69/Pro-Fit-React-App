@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcd5a843.css",
-    "main.js": "/static/js/main.3ec11d8a.js",
-    "static/media/Logo.png": "/static/media/Logo.a3b9197e1c2d14e16aa0.png",
-    "static/media/banner.png": "/static/media/banner.4bcae34aa23f32199426.png",
-    "static/media/workout.png": "/static/media/workout.2d57f670271ac16476b9.png",
-    "static/media/down-arrow.png": "/static/media/down-arrow.f1491aa13eaf20d3a105.png",
-    "static/media/gym.png": "/static/media/gym.6e701417c428e2fbc267.png",
-    "index.html": "/index.html",
-    "main.fcd5a843.css.map": "/static/css/main.fcd5a843.css.map",
-    "main.3ec11d8a.js.map": "/static/js/main.3ec11d8a.js.map"
+    "main.css": "/Pro-Fit-React-App/static/css/main.fcd5a843.css",
+    "main.js": "/Pro-Fit-React-App/static/js/main.4cd028a8.js",
+    "static/media/Logo.png": "/Pro-Fit-React-App/static/media/Logo.a3b9197e1c2d14e16aa0.png",
+    "static/media/banner.png": "/Pro-Fit-React-App/static/media/banner.4bcae34aa23f32199426.png",
+    "static/media/workout.png": "/Pro-Fit-React-App/static/media/workout.2d57f670271ac16476b9.png",
+    "static/media/down-arrow.png": "/Pro-Fit-React-App/static/media/down-arrow.f1491aa13eaf20d3a105.png",
+    "static/media/gym.png": "/Pro-Fit-React-App/static/media/gym.6e701417c428e2fbc267.png",
+    "index.html": "/Pro-Fit-React-App/index.html",
+    "main.fcd5a843.css.map": "/Pro-Fit-React-App/static/css/main.fcd5a843.css.map",
+    "main.4cd028a8.js.map": "/Pro-Fit-React-App/static/js/main.4cd028a8.js.map"
   },
   "entrypoints": [
     "static/css/main.fcd5a843.css",
-    "static/js/main.3ec11d8a.js"
+    "static/js/main.4cd028a8.js"
   ]
 }
