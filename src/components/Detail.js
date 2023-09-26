@@ -29,17 +29,35 @@ const Detail = ({ exerciseDetail }) => {
   console.log(instructions);
 
   return (
-    <Stack gap="100px">
+    <Stack sx={{ gap: { lg: "100px", xs: "50px" } }}>
       <Stack
-        marginTop="50px"
-        gap="60px"
-        sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
+        sx={{
+          flexDirection: { lg: "row" },
+          p: "20px",
+          alignItems: "center",
+          marginTop: { lg: "50px", xs: "20px" },
+          gap: { lg: "60px", xs: "30px" },
+        }}
       >
+        <Typography
+          sx={{ display: { lg: "none", xs: "block" } }}
+          fontSize="30px"
+          textTransform="capitalize"
+          style={{
+            opacity: 0, // start from fully transparent
+            animation: "fadeIn 0.5s ease-in forwards", // apply the fadeIn animation
+          }}
+          fontFamily={"DM Mono"}
+          borderBottom={"2px solid white"}
+        >
+          {name}
+        </Typography>
         <div className="detail-card">
           <img src={gifUrl} alt={name} loading="lazy" />
         </div>
         <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
           <Typography
+            sx={{ display: { lg: "block", xs: "none" } }}
             variant="h3"
             textTransform="capitalize"
             style={{
@@ -49,12 +67,29 @@ const Detail = ({ exerciseDetail }) => {
           >
             {name}
           </Typography>
+          <Typography
+            sx={{ display: { lg: "none", xs: "block" } }}
+            fontSize="30px"
+            textTransform="capitalize"
+            style={{
+              opacity: 0, // start from fully transparent
+              animation: "fadeIn 0.5s ease-in forwards", // apply the fadeIn animation
+            }}
+            fontFamily={"DM Mono"}
+            // borderBottom={"2px solid white"}
+          >
+            Intro:
+          </Typography>
 
           <Typography
             variant="h6"
             style={{
               opacity: 0, // start from fully transparent
               animation: "fadeIn 1s ease-in forwards", // apply the fadeIn animation
+            }}
+            sx={{
+              fontSize: { lg: "20px", xs: "15px" },
+              p: { lg: 0, xs: "5px" },
             }}
           >
             Ah, the {name}, a classic in the realm of fitness and a gem for
@@ -88,8 +123,15 @@ const Detail = ({ exerciseDetail }) => {
           ))}
         </Stack>
       </Stack>
-      <Stack gap="15px">
-        <Typography mb="35px" variant="h3">
+      <Stack gap="15px" sx={{ p: { lg: "0 0", xs: "0 20px" } }}>
+        <Typography
+          sx={{
+            p: { lg: "0 0", xs: "0 5px" },
+            // borderBottom: "1px solid white",
+            mb: { lg: "35px", xs: "10px" },
+            fontSize: { lg: "48px", xs: "30px" },
+          }}
+        >
           Instructions
         </Typography>
 
@@ -102,6 +144,7 @@ const Detail = ({ exerciseDetail }) => {
                 opacity: 0,
                 animation: `fadeIn 1s ease-in ${index * 0.5}s forwards`,
               }}
+              sx={{ fontSize: { lg: "24px", xs: "18px" } }}
             >
               • {paragraph}
             </Typography>

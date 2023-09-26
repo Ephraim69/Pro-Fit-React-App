@@ -158,6 +158,13 @@ body {
     filter: invert(100%);
   }
 
+  @media screen and (max-width: 1200px) {
+    .detail-card {
+      width: 300px;
+      height: auto
+    }
+  }
+
   .exercise-card {
     width: 400px;
     height: 400x;
