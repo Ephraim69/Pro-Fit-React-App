@@ -1,6 +1,6 @@
 # React Fitness App 🏋️‍♂️
 
-![Fitness App Banner](path-to-your-banner-image-if-you-have-one.jpg)
+![Fitness App Banner](./React App.jpg)
 
 ## Description 📝
 
