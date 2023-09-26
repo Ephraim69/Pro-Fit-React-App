@@ -24,6 +24,16 @@ const Detail = ({ exerciseDetail }) => {
       name: equipment,
     },
   ];
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 100, behavior: "smooth" });
+    }, 500);
+
+    // Cleanup: Clear the timer if the component is unmounted before the 3 seconds are up
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
 
   console.log("Instructions");
   console.log(instructions);
@@ -92,7 +102,7 @@ const Detail = ({ exerciseDetail }) => {
               p: { lg: 0, xs: "5px" },
             }}
           >
-            Ah, the {name}, a classic in the realm of fitness and a gem for
+            The {name}, a classic in the realm of fitness and a gem for
             targeting your {target}. Whether you're a fitness aficionado or just
             starting your journey, you've stumbled upon a pivotal exercise that
             can redefine your workout routine.

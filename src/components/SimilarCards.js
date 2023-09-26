@@ -32,25 +32,35 @@ const SimilarCards = ({ data }) => {
     <>
       <Stack
         className={transitioning ? "transitioning" : ""}
-        width="80%"
+        sx={{ width: { lg: "80%" } }}
         gap="20px"
+        display="flex"
         direction={{ xs: "column", md: "column", lg: "row" }}
+        alignItems="center"
       >
         {displayData.map((item) => (
           <ExerciseCard exercise={item} />
         ))}
       </Stack>
-      <Box mt="20px">
+      <Box sx={{ mt: { lg: "20px", xs: "30px" } }} position="relative">
         <Button
           variant="outlined"
-          sx={{ border: "2px solid grey", position: "absolute", right: 140 }}
+          sx={{
+            border: "2px solid grey",
+            position: "absolute",
+            right: { lg: 140, xs: "75vw" },
+          }}
           onClick={() => onArrowClick(false)}
         >
           <img src={LeftArrowIcon} alt="Left Arrow" />
         </Button>
         <Button
           variant="outlined"
-          sx={{ border: "2px solid grey", position: "absolute", right: 65 }}
+          sx={{
+            border: "2px solid grey",
+            position: "absolute",
+            right: { lg: 65, xs: "10vw" },
+          }}
           onClick={() => onArrowClick(true)}
         >
           <img src={RightArrowIcon} alt="Right Arrow" />

@@ -25,8 +25,22 @@ const ExerciseVideos = ({ youtubeData, name }) => {
 
   return (
     <>
-      <Box sx={{ marginTop: { lg: "100px", xs: "20px" } }} p="20px">
-        <Typography variant="h3" mb="33px" textTransform="capitalize">
+      <Box
+        sx={{
+          marginTop: { lg: "100px", xs: "50px" },
+          marginBottom: { lg: 0, xs: "100px" },
+        }}
+        p="20px"
+      >
+        <Typography
+          variant="h3"
+          mb="33px"
+          textTransform="capitalize"
+          sx={{
+            fontSize: { lg: "48px", xs: "35px" },
+            textAlign: { lg: "left", xs: "center" },
+          }}
+        >
           Watch <span style={{ color: "#ff2625" }}>{name}</span> exercise videos
         </Typography>
         <Stack
@@ -34,7 +48,11 @@ const ExerciseVideos = ({ youtubeData, name }) => {
           justifyContent="flex-start"
           flexWrap="wrap"
           alignItems="center"
-          sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0" } }}
+          sx={{
+            flexDirection: { lg: "row" },
+            gap: { lg: "110px", xs: "0" },
+            mb: { lg: 0, xs: "40px" },
+          }}
         >
           {displayData.map((item, index) => (
             <Box key={index}>
@@ -66,7 +84,7 @@ const ExerciseVideos = ({ youtubeData, name }) => {
             mt: { lg: "-50px" },
             border: "2px solid grey",
             position: "absolute",
-            right: { lg: 375 },
+            right: { lg: 375, xs: "75vw" },
           }}
           onClick={() => onArrowClick(false)}
         >
@@ -78,7 +96,7 @@ const ExerciseVideos = ({ youtubeData, name }) => {
             mt: { lg: "-50px" },
             border: "2px solid grey",
             position: "absolute",
-            right: { lg: 305, xs: -20 },
+            right: { lg: 305, xs: "10vw" },
           }}
           onClick={() => onArrowClick(true)}
         >

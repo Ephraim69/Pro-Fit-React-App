@@ -8,8 +8,16 @@ const SimilarExercises = ({ targetMuscle, equipment }) => {
   console.log(targetMuscle);
   console.log(equipment);
   return (
-    <Box sx={{ mt: { lg: "100px", xs: "0" } }}>
-      <Typography variant="h3">
+    <Box sx={{ mt: { lg: "100px", xs: "0" }, mb: { lg: 0, xs: "100px" } }}>
+      <Typography
+        variant="h3"
+        mb="33px"
+        sx={{
+          fontSize: { lg: "48px", xs: "30px" },
+          textAlign: { lg: "left", xs: "center" },
+          p: { lg: 0, xs: "0 20px" },
+        }}
+      >
         Exercises that target the same Muscle group:{" "}
         <span style={{ color: "#ff2625", textTransform: "capitalize" }}>
           {targetMuscle.length && targetMuscle[0].target}
@@ -23,7 +31,18 @@ const SimilarExercises = ({ targetMuscle, equipment }) => {
           <Loader />
         )}
       </Stack>
-      <Typography mt="150px" variant="h3">
+      <Typography
+        variant="h3"
+        mb="33px"
+        mt="150px"
+        textTransform="capitalize"
+        sx={{
+          fontSize: { lg: "48px", xs: "30px" },
+          textAlign: { lg: "left", xs: "center" },
+          p: { lg: 0, xs: "0 20px" },
+          mt: { lg: "150px", xs: "110px" },
+        }}
+      >
         Exercises that use the same equipment:{" "}
         <span style={{ color: "#ff2625", textTransform: "capitalize" }}>
           {equipment.length && equipment[0].equipment}

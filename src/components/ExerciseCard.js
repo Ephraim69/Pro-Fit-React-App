@@ -8,9 +8,6 @@ import "./ExerciseCard.css";
 const ExerciseCard = ({ index, exercise }) => {
   const { id } = useParams();
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 100, behavior: "smooth" });
-  }, [id]);
   return (
     <Link
       className="exercise-card"

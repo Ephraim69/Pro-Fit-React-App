@@ -5,6 +5,7 @@ import { Box, Stack, Typography } from "@mui/material";
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
+import Loader from "./Loader";
 
 const Exercises = ({
   exercises,
@@ -29,7 +30,7 @@ const Exercises = ({
   const paginate = (e, value) => {
     setCurrentPage(value);
 
-    window.scrollTo({ top: 1800, behaviour: "smooth" });
+    window.scrollTo({ top: window.innerHeight * 2, behaviour: "smooth" });
   };
 
   useEffect(() => {
@@ -86,9 +87,13 @@ const Exercises = ({
         flexWrap="wrap"
         justifyContent="center"
       >
-        {currentExercises.map((exercise, index) => (
-          <ExerciseCard key={index} exercise={exercise} />
-        ))}
+        {currentExercises.length ? (
+          currentExercises.map((exercise, index) => (
+            <ExerciseCard key={index} exercise={exercise} />
+          ))
+        ) : (
+          <Loader />
+        )}
       </Stack>
       <Stack mt="100px" alignItems="center">
         {exercises.length > 9 && (
